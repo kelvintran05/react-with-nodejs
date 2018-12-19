@@ -7,9 +7,8 @@
     "npm": "6.4.1"
   },
   "scripts": {
-    "start": "npm run build && node dist/index.js",
-    "build": "babel index.js -d dist"
-
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -17,6 +16,7 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
+    "nodemon": "^1.18.9",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "pug": "2.0.0-beta11"
